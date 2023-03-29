@@ -67,6 +67,7 @@ body {
     --often-color: #FFFFFF;
     --web-color: #4D5AE5;
     --studio-color: #2E2F42;
+    --hero-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 /**----------------------HEADER-------------------*/
 .box {
@@ -154,13 +155,13 @@ body {
 }
 /**-----------------------HERO-------------------*/
 .hero {
-    background: #2E2F42;
+    background-color: #2E2F42;
     padding-bottom: 188px;
     padding-top: 188px;
-}
-.hero-container {
-    
-    
+    background-image: var(--hero-gradient), url(../images/people-office1.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .hero-title {
     max-width: 496px;
@@ -172,12 +173,7 @@ body {
     margin-bottom: 48px;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;
-    
-    
-    
-    
-    
+    margin-right: auto;  
 }
 .hero-button {
     display: block;
@@ -193,10 +189,7 @@ body {
     cursor: pointer;
     border: none;
     margin: 0 auto;
-    border-radius: 4px;
-    
-
-    
+    border-radius: 4px;   
 }
 .hero-button:hover {
     background-color: #404BBF;
@@ -212,17 +205,25 @@ body {
     height: 0;
     display: flex;
 }
-
 .pluses-list {
     display: flex;
     gap: 24px;
 }
-
 .pluses-item {
     background-color: #FFFFFF;
     width: 264px;
-}
 
+}
+.pluses-link {
+    width: 100%;
+    height: 112px;
+    background: #F4F4FD;
+     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
 .pluses-title {   
     font-weight: 500;
     font-size: 20px;
@@ -230,7 +231,6 @@ body {
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
-
 }
 
 .pluses-text {
@@ -255,19 +255,16 @@ body {
     color: #2E2F42;
     margin-bottom: 72px;
 }
-
 .doing-list {
     display: flex;
     gap: 24px;
 }
-
 .doing-item {}
 
 /**----------------------OUR TEAM---------------*/
 .team {
     background-color: #F4F4FD;
 }
-
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -278,16 +275,17 @@ body {
     color: #2E2F42;
     margin-bottom: 72px;
 }
-
 .team-list {
     display: flex;
     justify-content: space-between;
 }
-
 .team-item {
     background: var(--often-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
-
 .team-card {
     font-weight: 500;
     font-size: 20px;
@@ -302,23 +300,84 @@ body {
     line-height: 1.5;
     color: #434455;
     text-align: center;
+    margin-bottom: 8px;
 }
 .team-people {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.card {}
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.team-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-soc-link:hover {
+    background-color: #404BBF;
+}
+.team-soc-link:focus {
+    background-color: #404BBF;
+}
+.team-soc-icon {
+    fill: #FFFFFF;
+}
+.card {
+}
+/**---------------------CUSTOMERS-----------------*/
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.customers-item {
+    width: 168px;
+    height: 88px;
+}
+
+.customers-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+}
+.customers-link:hover {
+    border: 1px solid #404BBF;
+}
+.customers-link:focus {
+    border: 1px solid #404BBF;
+}
+.icon {
+    fill: #8e8f99;
+}
+.icon:hover {
+    fill: #404BBF;
+}
+.icon:focus {
+    fill: #404BBF;
+}
 
 /**----------------------FOOTER-----------------*/
 .footer {
     background: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
-
-    
-
-
-
+    display: flex;
 }
 .footer-logo span {
     font-family: 'Raleway', sans-serif;
@@ -347,7 +406,27 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    
+       
+}
+.footer-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 120px;
+}
+
+.media-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.soc-media {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
 }
 /**--------------------PORTFOLIO------------*/
 .nine {
@@ -362,14 +441,13 @@ body {
     margin-bottom: 72px;
     gap: 24px;
 
-justify-content: center;
-    
+justify-content: center;  
 }
 .filter-button {
     min-width: 70px;
     height: 48px;
     font-family: inherit;
-    background: #F4F4FD;
+    background-color: #F4F4FD;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -382,21 +460,23 @@ justify-content: center;
     padding-bottom: 12px;
     padding-left: 24px;
     padding-right: 24px;
-    
-
 }
 .filter-button:hover {
-    background: #404BBF;
+    background-color: #404BBF;
     color: var(--often-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 2px 1px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-button:focus {
-    background: #404BBF;
+    background-color: #404BBF;
     color: var(--often-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 2px 1px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.direct-title {
-    
+.direct-title {  
 }
-
 .direct-list {
     display: flex;
     flex-wrap: wrap;
@@ -413,7 +493,6 @@ justify-content: center;
     color: #2E2F42;
     margin-bottom: 8px;
 }
-
 .direct-text {
     font-size: 16px;
     line-height: 1.5;
@@ -426,4 +505,12 @@ justify-content: center;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
 }
+.direct-item {
+}
+.direct:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
