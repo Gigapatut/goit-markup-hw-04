@@ -482,7 +482,7 @@ justify-content: center;
     flex-wrap: wrap;
     gap: 48px 24px;
 }
-.direct-list > .item {
+.direct-list >.item {
     flex-basis: calc(100% / 3);
 }
 .direct-card {
@@ -505,12 +505,11 @@ justify-content: center;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
 }
-.direct-item {
-}
-.direct:hover {
+.direct-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
                 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 
 
