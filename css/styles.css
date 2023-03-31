@@ -432,6 +432,21 @@ body {
     color: #FFFFFF;
     margin-bottom: 16px;
 }
+.media-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media-soc-link:hover {
+    background-color: #31D0AA;
+}
+.media-soc-link:focus {
+    background-color: #31D0AA;
+}
 /**--------------------PORTFOLIO-----------*/
 .nine {
     padding-top: 96px;
